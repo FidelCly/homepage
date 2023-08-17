@@ -56,7 +56,7 @@ jobs:
           pnpm install @microsoft/eslint-formatter-sarif@2.1.7  --strict-peer-dependencies
 
       - name: Run ESLint
-        run: pnpm eslint pages/**/*.ts pages/**/*.tsx
+        run: pnpm eslint pages/**/*.tsx components/**/*.tsx
           --config .eslintrc.js
           --ignore-path .eslintignore
           --ext .js,.ts,.tsx
