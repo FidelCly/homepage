@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Main() {
   return (
     <section className="text-gray-600 body-font">
@@ -12,20 +15,20 @@ export default function Main() {
             d'obtenir des analyses sur les habitudes de vos clients.
           </p>
           <div className="flex justify-center">
-            <a
+            <Link
               className="inline-flex items-center px-5 py-3 mt-2 font-medium text-gray-600 transition duration-500 ease-in-out transform bg-transparent bg-green-400 border rounded-lg"
               href="/"
             >
               <span className="justify-center">Apprenez en plus</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="mb-0 mr-48 xl:mr-44 sm:mr-0 sm:mb-28 lg:mb-0 md:pl-10">
-          <img
+          <Image
             className="ml-24 w-80 md:ml-1"
             alt="iPhone-12"
             src="/images/iPhone-13.png"
-          ></img>
+          ></Image>
         </div>
       </div>
       <section className="mx-auto">
@@ -37,11 +40,11 @@ export default function Main() {
           </div>
           <div className="grid grid-cols-1 gap-16 mb-16 text-center lg:grid-cols-1">
             <div className="flex items-center justify-center">
-              <img
+              <Image
                 src="/images/etna-logo-2-quadri.png"
                 alt="etna Logo"
                 className="block object-contain h-16 greyC"
-              ></img>
+              ></Image>
             </div>
           </div>
         </div>
@@ -51,14 +54,15 @@ export default function Main() {
           Optimiser votre fidelite
         </h1>
         <h1 className="mb-8 text-2xl font-semibold text-center text-gray-600 Avenir">
-          Support d'analyse de données pour les entreprises avec possibilite de campagne d'email ciblee.
+          Support d'analyse de données pour les entreprises avec possibilite de
+          campagne d'email ciblee.
         </h1>
         <div className="container flex flex-col items-center justify-center mx-auto rounded-lg ">
-          <img
+          <Image
             className="object-cover object-center w-3/4 mb-10 border rounded-lg shadow-md g327"
             alt="Placeholder Image"
             src="./images/Tableau de bord.png"
-          ></img>
+          ></Image>
         </div>
       </div>
       <section className="relative">
@@ -76,13 +80,13 @@ export default function Main() {
               type="email"
               autoComplete="email"
               className="w-1/4 py-3 pl-2 pr-2 mt-2 font-semibold text-gray-800 border border-gray-600 rounded-md hover:border-gray-900"
-            ></input>{" "}
-            <a
+            ></input>{' '}
+            <Link
               className="inline-flex items-center py-3 mt-2 ml-2 font-medium text-gray-600 transition duration-500 ease-in-out transform bg-transparent bg-green-400 border rounded-lg px-14"
               href="/"
             >
               <span className="justify-center">S'inscire</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
