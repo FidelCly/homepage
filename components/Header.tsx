@@ -67,7 +67,7 @@ export default function Header() {
               <li>
                 <Link
                   className="inline-flex items-center px-4 py-2 mt-2 font-medium text-gray-600 transition duration-500 ease-in-out transform bg-transparent bg-green-400 rounded-lg text-md md:mt-0 md:ml-4 hover:text-gray-900"
-                  href={process.env.NEXT_PUBLIC_APP_URL}
+                  href={process.env.NEXT_PUBLIC_APP_URL ?? '/'}
                 >
                   <span className="justify-center">Obtenez l'application</span>
                   <svg
