@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Link from 'next/link';
@@ -6,10 +5,6 @@ import Link from 'next/link';
 export default function Contact() {
   return (
     <div className="text-black">
-      <Head>
-        <title>nine4</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <div className="flex flex-col justify-center mx-auto text-center mt-52 max-w-2x1">
         <h1 className="text-3xl font-bold tracking-tight text-black md:text-5xl">
