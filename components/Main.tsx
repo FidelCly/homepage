@@ -28,6 +28,8 @@ export default function Main() {
             className="ml-24 w-80 md:ml-1"
             alt="iPhone-12"
             src="/images/iPhone-13.png"
+            width={500}
+            height={1000}
           ></Image>
         </div>
       </div>
@@ -44,6 +46,8 @@ export default function Main() {
                 src="/images/etna-logo-2-quadri.png"
                 alt="etna Logo"
                 className="block object-contain h-16 greyC"
+                width={200}
+                height={200}
               ></Image>
             </div>
           </div>
@@ -61,7 +65,9 @@ export default function Main() {
           <Image
             className="object-cover object-center w-3/4 mb-10 border rounded-lg shadow-md g327"
             alt="Placeholder Image"
-            src="./images/Tableau de bord.png"
+            src="/images/Tableau de bord.png"
+            width={1000}
+            height={500}
           ></Image>
         </div>
       </div>
