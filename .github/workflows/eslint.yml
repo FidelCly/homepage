@@ -57,7 +57,7 @@ jobs:
 
       - name: Run ESLint
         run: pnpm eslint pages/**/*.tsx components/**/*.tsx
-          --config .eslintrc.js
+          --config .eslintrc.json
           --ignore-path .eslintignore
           --ext .js,.ts,.tsx
           --format @microsoft/eslint-formatter-sarif
