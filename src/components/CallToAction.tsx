@@ -24,7 +24,7 @@ export function CallToAction() {
             Commencez aujourd&apos;hui
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            Il est temps de reprendre le contrôle sur votre programme fidélité.
+            Il est temps de reprendre le contrôle sur votre programme de fidélité.
           </p>
           <Button
             href={process.env.NEXT_PUBLIC_APP_URL + '/auth/signup'}
