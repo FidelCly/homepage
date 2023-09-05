@@ -47,18 +47,23 @@ export function Button<
   Color extends ColorKey<Variant>,
   Variant extends VariantKey = 'solid',
 >({ variant, color, className, ...props }: ButtonProps<Variant, Color>) {
-  variant = variant ?? ('solid' as Variant)
-  color = color ?? ('slate' as Color)
+  variant = variant ?? ('solid' as Variant);
+  color = color ?? ('slate' as Color);
+
+  const variantStyle = variantStyles[variant] as {
+    [key in ColorKey<Variant>]: string;
+  };
 
   className = clsx(
     baseStyles[variant],
-    variantStyles[variant][color],
+    variantStyle[color],
     className,
-  )
+  );
 
   return typeof props.href === 'undefined' ? (
     <button className={className} {...props} />
   ) : (
     <Link className={className} {...props} />
-  )
+  );
 }
+
